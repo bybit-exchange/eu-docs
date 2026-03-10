@@ -22,79 +22,6 @@ TradingFee| string| Trading fee for a single fill|
 FeeToken| string| Token of the Trading Fee|
 TradeTime| string| UNIX Time. This is in milliseconds. Time when the trade was executed|
 
-### 2. Contract Trade History
-#### Response Parameters
-| Parameter  | Type | Comments|
-|:----- |:-------|:-----|
-OrderID| string| Order ID of the closing order.|
-TradeID| string| Trade ID of the closing order.|
-ContractType| string| Types of Contract. Inverse Contracts, Linear Contracts, Future Contracts|
-Symbol| string| Name of the trading pair in the form of|
-Side| string| Side. Either Buy or Sell direction|
-QuoteCoin| string| Symbol of the Quote Coin|
-BaseCoin| string| Symbol of the Executed Coin|
-ExecPrice| string| Execution Price|
-ExecQty| string| Transaction Quantity|
-ExecType| string| Execution Types. Trade, ADL, BustTrade|
-ExecValue| string| Transacted volume|
-FeeRate| string| Rates for Maker or taker fee|
-FeeToken| string| Token of the Trading Fee|
-TradingFee| string| Trading fee for a single fill|
-TradeTime| string| UNIX Time. This is in milliseconds. Time when the trade was executed|
-ClosedSize| string| Closed postion size|
-OrderType| string| Order type|
-
-### 3. USDT/USDC Options Trade History
-#### Response Parameters
-| Parameter  | Type | Comments|
-|:----- |:-------|:-----|
-OrderID| string| Order ID of the closing order.|
-TradeID| string| Trade ID of the closing order.|
-ContractType| string| Types of Contract. Inverse Contracts, Linear Contracts, Future Contracts|
-Symbol| string| Name of the trading pair in the form of|
-Side| string| Side. Either Buy or Sell direction|
-QuoteCoin| string| Symbol of the Quote Coin|
-BaseCoin| string| Symbol of the Executed Coin|
-ExecPrice| string| Execution Price|
-ExecQty| string| Transaction Quantity|
-ExecType| string| Execution Types. Trade, ADL, BustTrade|
-ExecValue| string| Transacted volume|
-FeeRate| string| Rates for Maker or taker fee|
-FeeToken| string| Token of the Trading Fee|
-TradingFee| string| Trading fee for a single fill|
-TradeTime| string| UNIX Time. This is in milliseconds. Time when the trade was executed|
-
-### 4. NFT Trade History
-#### Response Parameters
-| Parameter  | Type | Comments|
-|:----- |:-------|:-----|
-OrderID| string| Order ID of the closing order.|
-Network| string| Name of Network.|
-Side| string| Side. Either Buy or Sell direction|
-NftId| string| ID of the NFT collection|
-ExecValue| string| Transacted volume|
-BaseCoin| string| Symbol of the Executed Coin|
-PlatformFee| string| Fees for Platform, Fee is as per Base coin|
-ShareFee| string| Fees for Sharing, Fee is as per Base coin|
-TradeTime| string| UNIX Time. This is in milliseconds. Time when the trade was executed|
-
-## P&L History
-### Response Parameters
-| Parameter  | Type | Comments|
-|:----- |:-------|:-----|
-OrderID| string| Order ID of the closing order.|
-ContractType| string| Types of Contract. Inverse Contracts, Linear Contracts, Future Contracts|
-Symbol| string| Name of the trading pair in the form of|
-Side| string| Side. Either Buy or Sell direction|
-ClosedSize| string| Closed Size|
-CumEntryValue| string| Cumulative entry value|
-AvgEntryPrice| string| Average entry price|
-CumExitValue| string| Cumulative exit value|
-AvgExitPrice| string| Average exit price|
-SettleCoin| string| Settle Coin. Coin for Profit and Loss|
-ClosedPNL| string| Closed Profit and Loss|
-FillCount| string| The number of fills in a single order|
-TradeTime| string| UNIX Time. This is in milliseconds. Time when the trade was executed|
 
 ## Earn History
 ### 1. BybitSavings Yield History
@@ -108,64 +35,8 @@ EffectiveStakingAmount| string| Total amount staked with the Asset Staked coin|
 Yield| string| Amount of the Interest coin that was given out based on|
 TradeTime| string| UNIX Time. This is in milliseconds. Time when the trade was executed|
 
-### 2. LiquidityMining Liquidity History
-#### Response Parameters
-| Parameter  | Type | Comments|
-|:----- |:-------|:-----|
-OrderID| string| Order ID of the closing order.|
-Symbol| string| Name of the trading pair in the form of|
-OrderType| string| Includes the different types of liquidity mining. Add, Remove, Reduce Leverage, Reinvest|
-EntryPrice| string| Entry price of principal coin pair at time of order|
-Leverage| string| Leverage Multiples|
-Slippage| string| Difference between price of an order and the price when the order actually executes|
-Liquidity| string| Liquidity = Principal Change multiplied by Leverage|
-TradeTime| string| UNIX Time. This is in milliseconds. Time when the trade was executed|
 
-### 3. LiquidityMining Yield History
-#### Response Parameters
-| Parameter  | Type | Comments|
-|:----- |:-------|:-----|
-AssetEarnedCoin| string| Coin that the Interest is given out in|
-Yield| string| Amount of the Interest coin that was given out based on|
-TradeTime| string| UNIX Time. This is in milliseconds. Time when the trade was executed|
-
-### 4. LiquidityMining Swap History
-#### Response Parameters
-| Parameter  | Type | Comments|
-|:----- |:-------|:-----|
-OrderId| string| translation missing: en.taxOrderID|
-InitialCoin| string| The coin in the pair that you are trying to swap from.|
-DepositAmount| string| Quantity of the selected coin in the pair that you are trying to swap from|
-SwapCoin| string| The coin in the pair that you are trying to swap into.|
-SwapAmount| string| Quantity of the selected coin in the pair that you are trying to swap to|
-SwapFeeToken| string| Fee will be in the swap coin.|
-SwapFee| string| Fee incurred after the swap was successfully performed. Fee will be in the swap coin|
-Slippage| string| Difference between price of an order and the price when the order actually executes|
-TradeTime| string| UNIX Time. This is in milliseconds. Time when the trade was executed|
-
-### 5. DualAsset Swap History
-#### Response Parameters
-| Parameter  | Type | Comments|
-|:----- |:-------|:-----|
-OrderId| string| Order ID|
-InitialCoin| string| The coin in the pair that you are trying to swap from.|
-DepositAmount| string| Quantity of the selected coin in the pair that you are trying to swap from|
-SwapCoin| string| The coin in the pair that you are trying to swap into.|
-SwapAmount| string| Quantity of the selected coin in the pair that you are trying to swap to|
-OrderTime| number| UNIX Time. This is in milliseconds. Time which the order was ordered|
-TradeTime| number| UNIX Time. This is in milliseconds. Time when the trade was executed|
-
-### 6. DeFiMining Yield History
-#### Response Parameters
-| Parameter  | Type | Comments|
-|:----- |:-------|:-----|
-OrderId| string| translation missing: en.taxOrderID|
-AssetStakedCoin| string| Coin that was used to staked in the Bybit Savings Product|
-Yield| string| Amount of the Interest coin that was given out based on|
-OrderTime| number| UNIX Time. This is in milliseconds. Time which the order was ordered|
-TradeTime| number| UNIX Time. This is in milliseconds. Time when the trade was executed|
-
-### 7. Launchpool Yield History
+### 2. Launchpool Yield History
 #### Response Parameters
 | Parameter  | Type | Comments|
 |:----- |:-------|:-----|
@@ -174,13 +45,6 @@ EffectiveStakingAmount| string| Total amount staked with the Asset Staked coin|
 Yield| string| Amount of the Interest coin that was given out based on|
 TradeTime| number| UNIX Time. This is in milliseconds. Time when the trade was executed|
 
-### 8. Sharkfin Yield History
-#### Response Parameters
-| Parameter  | Type | Comments|
-|:----- |:-------|:-----|
-AssetEarnedCoin| string| Coin that the Interest is given out in|
-Yield| string| Amount of the Interest coin that was given out based on|
-TradeTime| number| UNIX Time. This is in milliseconds. Time when the trade was executed|
 
 ## Deposit And Withdraw History
 ### 1. Crypto Deposit History
@@ -266,19 +130,6 @@ Fee| string| Withdrawal fee as per the withdrawal coin|
 OrderTime| number| UNIX Time. This is in milliseconds. Time which the order was ordered|
 CompletedTime| number| Complete timestamp (ms)|
 
-### 7. NFT Deposit and Withdrawal History
-#### Response Parameters
-| Parameter  | Type | Comments|
-|:----- |:-------|:-----|
-OrderId| string| translation missing: en.taxOrderID|
-TxHash| string| Unique IDs recording each NFT transaction|
-TokenId| string| All NFTs have a uint256 variable that identifies different NFT|
-TransferType| string| Type. Deposit, Withdrawal|
-Network| string| Name of Network.|
-FeeToken| string| Token of the Trading Fee|
-Fee| string| Any fee incurred using the transaction of the NFT|
-OrderTime| number| UNIX Time. This is in milliseconds. Time which the order was ordered|
-CompletedTime| number| Complete timestamp (ms)|
 
 ## Bonus History
 
