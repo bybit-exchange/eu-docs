@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Bybit API Documentation',
+  title: 'Bybit EU TAX API Documentation',
   tagline: '',
   url: 'https://bybit-exchange.github.io',
   baseUrl: '/eu-docs/',
@@ -195,61 +195,7 @@ const config = {
           },
         ],
       },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Telegram – English',
-                href: 'https://t.me/BybitAPI',
-              },
-              {
-                label: 'Telegram – Chinese',
-                href: 'https://t.me/BybitChineseAPI',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/VBwVwS2HUs',
-              },
-            ],
-          },
-          {
-            title: 'GitHub',
-            items: [
-              {
-                label: 'API usage examples',
-                href: 'https://github.com/bybit-exchange/api-usage-examples',
-              },
-              {
-                label: 'Postman collection',
-                href: 'https://github.com/bybit-exchange/QuickStartWithPostman',
-              },
-              {
-                label: 'Official Python SDK – pybit',
-                href: 'https://github.com/bybit-exchange/pybit',
-              },
-              {
-                label: 'Community Node.js SDK – bybit-api',
-                href: 'https://www.npmjs.com/package/bybit-api',
-              },
-              {
-                label: 'Official Go SDK – bybit-go-api',
-                href: 'https://github.com/bybit-exchange/bybit.go.api',
-              },
-              {
-                label: 'Official Java SDK – bybit-java-api',
-                href: 'https://github.com/bybit-exchange/bybit-java-api',
-              },
-              {
-                label: 'Official .Net SDK – bybit.net.api',
-                href: 'https://github.com/bybit-exchange/bybit.net.api',
-              },
-            ],
-          },
-        ],
-      },
+      
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
