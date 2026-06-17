@@ -186,7 +186,12 @@ const config = {
             position: 'left',
             label: 'Tax API V3',
           },
-          
+          {
+            type: 'doc',
+            docId: 'fin-sandbox',
+            position: 'left',
+            label: 'FinAPI Sandbox',
+          },
           {
             type: 'localeDropdown',
             position: 'right',

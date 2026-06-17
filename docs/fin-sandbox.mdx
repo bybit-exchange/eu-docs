@@ -1,0 +1,33 @@
+---
+title: Bybit EU PSD2 XS2A Interface
+slug: /fin
+---
+Under the EU Payment Services Directive (PSD2), certified third-party providers (TPPs) can retrieve account information and 
+initiate payments with the user's consent. Communication between TPPs and banks takes place via a standardized Access-to-Account 
+interface (XS2A).
+
+Bybit EU uses the "finAPI XS2A Server" powered by finAPI GmbH to provide account information service (AIS), payment initiation 
+service (PIS) and payment instrument issuing service (PIIS) for all cooperated TPPs.
+
+Third-party providers with a valid QWAC certificate can access the interface at the following URLs:
+- https://xs2a-sandbox.finapi.io (Sandbox)
+
+A technical description of the API functions can be found in the developer documentation at 
+- https://documentation.finapi.io/xs2a/
+
+For SCA, Bybit EU offers different flows according to the service type that TPPs are going to use:
+- AIS/PIIS: Decoupled flow by Bybit EU app is required when collecting consent from the endusers and asking for AIS/PIIS SCA
+- PIS: Embedded flow by redirecting to Bybit EU app is required when asking PIS SCA
+
+## Limitations
+Bybit EU does not support the following use cases:
+
+**AIS**
+- Retrieve account details with IBAN
+- Retrieve transaction status for standing orders
+- Card account information services
+
+**PIS**
+- Single payment with requested execution time
+- Bulk payment
+- Periodic payment
