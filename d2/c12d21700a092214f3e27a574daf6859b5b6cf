@@ -1,0 +1,14 @@
+docs/fin-sandbox.mdx
+  h_2f977b90e7f89b 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2-bit.9+daa2e24",
+  "base_commit_sha": "d2c12d21700a092214f3e27a574daf6859b5b6cf",
+  "prompts": {},
+  "humans": {
+    "h_2f977b90e7f89b": {
+      "author": "wood.liang1"
+    }
+  }
+}
